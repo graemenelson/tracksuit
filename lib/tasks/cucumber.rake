@@ -4,8 +4,6 @@ $LOAD_PATH.unshift( "#{cucumber_vendor_gem_dir}/lib" ) if File.exists?( cucumber
 
 require 'cucumber/rake/task'
 
-
 Cucumber::Rake::Task.new(:features) do |t|
-  #t.fork = true
   t.cucumber_opts = "--format pretty"
 end
