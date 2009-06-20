@@ -1,5 +1,5 @@
 # lets use rspec in the our vendor directory.
-rspec_vendor_gem_dir = File.expand_path( File.join( PROJECT_ROOT, '/../../vendor/rspec') )
+rspec_vendor_gem_dir = File.expand_path( File.join( PROJECT_ROOT, '/vendor/rspec') )
 $LOAD_PATH.unshift( "#{rspec_vendor_gem_dir}/lib" ) if File.exists?( rspec_vendor_gem_dir )
 
 require 'spec/rake/spectask'
