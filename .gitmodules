@@ -7,3 +7,6 @@
 [submodule "vendor/cucumber"]
 	path = vendor/cucumber
 	url = git://github.com/aslakhellesoy/cucumber.git
+[submodule "vendor/webrat"]
+	path = vendor/webrat
+	url = git://github.com/brynary/webrat.git
