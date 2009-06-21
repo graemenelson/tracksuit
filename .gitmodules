@@ -13,3 +13,6 @@
 [submodule "vendor/haml"]
 	path = vendor/haml
 	url = git://github.com/nex3/haml.git
+[submodule "vendor/rack-test"]
+	path = vendor/rack-test
+	url = git://github.com/brynary/rack-test.git

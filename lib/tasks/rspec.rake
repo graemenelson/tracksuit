@@ -10,6 +10,6 @@ end
 
 Spec::Rake::SpecTask.new(:spec => spec_prereq) do |t|
   t.spec_opts = ['--options', "\"#{PROJECT_ROOT}/spec/spec.opts\""]
-  t.spec_files = FileList['spec/**/*/*_spec.rb']
+  t.spec_files = FileList['spec/*_spec.rb']
 end
 

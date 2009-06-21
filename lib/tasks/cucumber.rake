@@ -11,6 +11,9 @@ require 'cucumber/rake/task'
 #   t.cucumber_opts = "--format pretty -r #{PROJECT_ROOT}/features/support/env.rb"
 # end
 
+desc "run the webrat features (might have it run all features in the future)"
+task :features => ["features:webrat"]
+
 namespace :features do 
   
   Cucumber::Rake::Task.new( :webrat ) do |t|
