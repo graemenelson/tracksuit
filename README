@@ -6,6 +6,8 @@ include cucumber with webrat and rspec with Rack-Test.
 There is no data storage, not all application need it and the data storage really depends on the type
 of application being built.
 
+Haml is the default view template used, but it would be pretty easy to switch to something else.
+
 I've debated about trying to package all the required gems into the vendor directory, but I haven't
 really convinced myself if this is a good direction to go.  I like the idea of having all the dependency
 self contained within the application.  If I need to upgrade a dependency in one application, it doesn't

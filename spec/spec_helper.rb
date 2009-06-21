@@ -17,6 +17,7 @@ require 'rack/test'
 set :environment, :test
 
 Spec::Runner.configure do |config|
+  
   config.include Rack::Test::Methods
 
   def app
