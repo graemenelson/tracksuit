@@ -10,3 +10,6 @@
 [submodule "vendor/webrat"]
 	path = vendor/webrat
 	url = git://github.com/brynary/webrat.git
+[submodule "vendor/haml"]
+	path = vendor/haml
+	url = git://github.com/nex3/haml.git

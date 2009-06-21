@@ -7,6 +7,14 @@ $LOAD_PATH.unshift( "#{webrat_vendor_gem_dir}/lib" ) if File.exists?( webrat_ven
 
 require 'cucumber/rake/task'
 
-Cucumber::Rake::Task.new(:features) do |t|
-  t.cucumber_opts = "--format pretty -r #{PROJECT_ROOT}/features/support/env.rb"
+# Cucumber::Rake::Task.new(:features) do |t|
+#   t.cucumber_opts = "--format pretty -r #{PROJECT_ROOT}/features/support/env.rb"
+# end
+
+namespace :features do 
+  
+  Cucumber::Rake::Task.new( :webrat ) do |t|
+    t.profile       = "webrat"
+  end
+  
 end

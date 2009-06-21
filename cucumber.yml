@@ -1,0 +1,1 @@
+webrat: -r features/support/env.rb -r features/support/webrat.rb -r features/webrat/step_definitions --format pretty features/webrat
